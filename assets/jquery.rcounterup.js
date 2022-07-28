@@ -32,11 +32,11 @@
                         if (isFloat) {
                             newNum = parseFloat(number / divisions * rcn).toFixed(decimalPlaces);
                         }
-						//if (isComma) {
-                          //  while (/(\d+)(\d{3})/.test(newNum.toString())) {
-                            //    newNum = newNum.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
-                            //}
-                        //}
+						if (isComma) {
+                            while (/(\d+)(\d{3})/.test(newNum.toString())) {
+                                newNum = newNum.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+                            }
+                        }
 
                         numbers.unshift(newNum);
                     }
