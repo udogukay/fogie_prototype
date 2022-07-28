@@ -32,7 +32,67 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
  
   <style>
-#hide-footer{opacity: 0;}
+body{margin-top:20px;}
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #3b82f6;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
 </style>
   
   
@@ -109,8 +169,8 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg">
                     <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style display-2">
-                            <strong>About us</strong><strong><br></strong>
+                        <h6 class="mbr-section-title card-title mbr-fonts-style display-2">
+                            <strong style="color:#ffffff">About us</strong><strong><br></strong>
                         </h6>
                         <p class="mbr-text mbr-fonts-style mb-4 display-4">
                             Fogie concept is considered one of the leading procurement and logistics partners in Africa With 3 offices across the country, including the head office in Lagos, Nigeria. The company also has operations in North America. Fogie Concept was established in 2004, with a single aim in mind, to provide the most seamless procurement and logistics process there is. Although our work is multipurpose, we offer competitive, cost-effective and advanced solutions to our clients. We offer a selection of services that include sourcing, supply chain solutions, construction, procurement, and supply of heavy-duty equipment, machinery, instruments, tools, spares, materials, chemicals, and other consumables. Our footprints can be tracked across various industries, from oil and gas &amp; engineering to government parastatals; our clients span various industries. It is at the center of our ethos to source and procures the right quality tools, materials, and equipment for the people in need of it and we are on a mission to establish ourselves as the best logistics and procurement service provider in our industry.</p>
@@ -135,11 +195,45 @@
     <div class="align-center container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
-                <h3 class="mbr-section-title mb-4 mbr-fonts-style display-5">
+                <h3 class="mb-4 mbr-fonts-style display-5">
                     <strong>Company Progress timeline.</strong></h3>
-                <p class="mbr-text mb-5 mbr-fonts-style display-7">
-                    insert timeline here</p>
                 
+              
+<div class="container">                      
+   
+
+    <div class="row">
+        <div class="col">
+            <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                <div class="timeline-step">
+                    <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="" data-original-title="2004">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1">2004</p>
+                        <p class="h6 text-muted mb-0 mb-lg-0">Company Opening</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="" data-original-title="2014">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1">2014</p>
+                        <p class="h6 text-muted mb-0 mb-lg-0">178% Profit realized</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step mb-0">
+                    <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="" data-original-title="Present">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1">Present</p>
+                        <p class="h6 text-muted mb-0 mb-lg-0"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+			  
             </div>
         </div>
     </div>
@@ -159,7 +253,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg">
-                    <div class="text-wrapper">
+                    <div class="text-wrapper" style="color:#ffffff">
                         <h6 class="card-title mbr-fonts-style display-5">
                             <strong>Mission</strong></h6>
                         <p class="mbr-text mbr-fonts-style mb-4 display-4">
@@ -368,7 +462,7 @@
     </div>
 </section>
 
-<section id="hide-footer" class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2833698" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Designed with Mobirise &#8204;</p><a style="z-index:1" href="https://mobirise.com/html-builder.html">Free HTML5 Website Creator</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/theme/js/script.js"></script>  
+<section style="opacity: 0;" class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2833698" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Designed with Mobirise &#8204;</p><a style="z-index:1" href="https://mobirise.com/html-builder.html">Free HTML5 Website Creator</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/theme/js/script.js"></script>  
 
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
